@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "backend for the pal website",
+  "homepage": "https://github.com/anir183/pal#readme",
+  "bugs": {
+    "url": "https://github.com/anir183/pal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anir183/pal.git"
+  },
+  "license": "MIT",
+  "author": "Anirban RoyChowdhury, Aritra Saha",
+  "type": "module",
+  "main": "dist\\index.js",
+  "scripts": {
+    "build": "npm install && rm -rf dist && tsc",
+    "start": "npm run build && node dist",
+    "dev": "tsx watch src",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.51.4",
+    "envalid": "^8.1.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/eslint": "^9.6.1",
+    "@types/express": "^5.0.6",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^25.0.3",
+    "eslint": "^9.39.2",
+    "jiti": "^2.6.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.51.0"
+  }
+}
